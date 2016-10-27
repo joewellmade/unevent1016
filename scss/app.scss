@@ -1,0 +1,485 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+//@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+// @include foundation-forms;
+// @include foundation-range-input;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+@include foundation-flex-video;
+//@include foundation-label;
+@include foundation-media-object;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+// @include foundation-slider;
+@include foundation-sticky;
+//@include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+//@include foundation-tabs;
+// @include foundation-thumbnail;
+@include foundation-title-bar;
+//@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
+
+body {
+
+  padding-top: 50px;
+}
+#div1 {
+  visibility: hidden;
+}
+
+// Navigation //
+
+#main-menu{
+  position: fixed;
+  top: 0;
+  z-index: 9998;
+  height: 50px;
+}
+.top-bar {
+  background: rgba(0,0,0,0.7);  
+  
+  ul {
+    background: transparent;
+    
+    li {
+      background: transparent;
+      
+      a {
+        color: $white;
+        text-align: center;
+        font-family: 'BrandonTextWeb-Medium', helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      a:hover, a:focus {
+        color: darken( $white, 20% );
+      }
+    }
+  }
+}
+.top-bar-left {
+  z-index: 9999;
+}
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}
+.mobile-menu-bar {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+  background-color: $black;
+  color: $white;
+  height: 95vh;
+  margin-bottom: 40px;
+  li {
+    height: 50px;
+    padding: 5px 10px;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+.sticky-container {
+  background-color: $black
+}
+
+// Donation Bar //
+
+.make-donation {
+  width: 100%;
+  background-color: $white;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  text-align: center;
+  z-index: 9999;
+  padding-top: 5px;
+  h3 {
+    text-align: right;
+    color: $gold;
+    display: inline;
+    padding: 8px 0 10px 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+}
+.make-donation h3 a {
+  color: $gold;
+}
+button {
+  height: 60px;
+  background-color: $gold;
+  padding: 12px 20px 10px 20px;
+  margin: 5px 8px 10px 8px;
+  font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: $white;
+}
+h3.donate {
+  text-decoration: underline;
+}
+// Typography //
+
+h1 {
+  font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  @media #{$small-only} {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+h2 {
+  font-family: 'BrandonTextWeb-Medium', helvetica, sans-serif;
+  line-height: 1.2em;
+  font-size: 26px;
+  @media #{$small-only} {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+p {
+  font-family: 'BrandonTextWeb-Regular', helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+p.small {
+  font-size: 16px;
+  line-height: 23px;
+  @media #{$small-only} {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+h1, h2, h3, h4, p {
+  color: $white;
+}
+a {
+  color: $white;
+  font-family: 'BrandonTextWeb-Bold', Helvetica, sans-serif;
+}
+a:hover, a:focus {
+    color: darken( $white, 10% );
+  }
+.content-top {
+	padding-top: 100px;
+	position: relative;
+}
+.header-area {
+  position: relative;
+  margin-bottom: -17%
+}
+.header-box {
+  background-color: rgba(255,255,255,0.9);
+  position: absolute;
+  padding: 15px 10px 5px 10px;
+  top: -10px;
+  left: 0;
+}
+.logo-box {
+  //padding: 5px 20px;
+}
+.intro-box {
+    h2, p {
+    color: $black;
+  }
+  margin-top: 0;
+  //padding: 5px 20px;
+  text-align: left;
+}
+.intro-box2 {
+  h2, p {
+  color: $black;
+  }
+  margin-top: 0;
+  //padding: 5px 20px;
+  text-align: left;
+}
+
+// Video //
+
+video { 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-25%);
+	background: url('') no-repeat;
+	background-size: cover;
+	transition: 1s opacity;
+  margin-bottom: 100px;
+}
+.content-box {
+	background-color: $black;
+}
+
+// About //
+
+.about-background{
+  background-color: $black;
+}
+.about-us {
+  padding: 0;
+  background-color: $black;
+}
+.outside-img {
+  background: url('../assets/outside02.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+// Project //
+.unevent-background{
+  background-color: #c79236;
+}
+.unevent-top h1 {
+  margin: 20px 0;
+}
+.project-background {
+  padding-top: 20px;
+  background-color: $blue;
+}
+.project-top {
+  margin-bottom: 20px;
+}
+// Breaking Out //
+
+.breaking-out-background {
+  background: url('../assets/breakout.jpg');
+  background-size: cover;
+}
+.breakout {
+  display: inline;
+  background: black;
+  box-shadow: 12px 0 0 black,-12px 0 0 black;
+  box-decoration-break: clone;
+  padding: 4px 0 4px;
+  line-height: 24px;
+}
+.circles {
+  line-height: 28px;
+}
+h1.breakout {
+  line-height: 40px;
+}
+h2.breakout {
+  line-height: 32px;
+}
+.circles {
+  padding: 100px 10px;
+}
+.circles img {
+  margin: 10px auto;
+}
+
+// Help Us //
+
+.help-us-background {
+  background-color: $pink;
+}
+.support {
+  padding: 20px 0;
+  background-color: $pink;
+}
+.illustration {
+  background: url('../assets/illustration.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.move-with-us-background {
+  padding-top: 20px;
+  background-color: $black;
+  background: url('../assets/stars.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.social-margin {
+  padding-bottom: 20px;
+}
+.logo-row {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.logo-row div {
+  margin-top: 20px;
+}
+.social {
+  margin-top: 60px;
+}
+.fa {
+  color: $move;
+  font-size: 2.8em !important;
+  padding-right: 20px;
+}
+.fa:hover, .fa:focus {
+  color: darken( $move, 10% );
+}
+.video-stroke {
+  border: 6px solid $move;
+}
+.help-us {
+  padding: 0;
+  background-color: $pink;
+  position: relative;
+}
+.margin-bottom {
+  margin-bottom: 40px;
+}
+
+// Media Queries //
+
+@media #{$small-only} {
+  #div1 {
+    visibility: visible;
+  }
+  .sticky-container {
+    display: none;
+  }
+  #main-menu, .top-bar-left {
+    display: none;
+  }
+  .mobile-menu-bar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: $black;
+    width: 100%;
+    padding: 12px 10px;
+    height: 46px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .logo-box {
+    margin-top: 20px;
+  }
+  .header-box {
+    position: relative;
+    background-color: rgba(255,255,255,0);
+  }
+  video {
+    display: none;
+  }
+  .make-donation {
+    text-align: left;
+    height: 108px;
+    h2 {
+      padding: 25px 20px 0 0;
+      font-size: 11px;
+    }
+    h3 {
+      text-align: center;
+      color: $white;
+      display: block;
+      padding: 8px 0 15px 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+  button {
+  height: 50px;
+  background-color: $white;
+  padding: 8px 8px 5px 8px;
+  margin: 8px 8px;
+  font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $gold;
+  width: 93%;
+  }
+  .illustration, .outside-img {
+    display: none;
+  }
+  .move-with-us-background {
+    margin-top: 0;
+  }
+  .move-with-us-background div{
+    margin-bottom: 0;
+  }
+  .anchor{
+    display: block;
+    height: 45px; /*same height as header*/
+    margin-top: -45px; /*same height as header*/
+    visibility: hidden;
+  }
+  img.b-logo {
+    width: 40px;
+  }
+  .header-area {
+    margin-top: -100px;
+  }
+}
+
+@media #{$medium-only} {
+  .illustration, .outside-img {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+}
+
+@media #{$large-up} {
+  .animatedGif {
+    display: none;
+  }
+}
+
+@media #{$xlarge-only} {
+  video { 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-45%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    margin-bottom: -300px;
+  }
+}
+
