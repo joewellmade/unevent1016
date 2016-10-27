@@ -2273,20 +2273,20 @@ h2.breakout {
       font-size: 11px; }
     .make-donation h3 {
       text-align: center;
-      color: #fefefe;
+      color: #c79236;
       display: block;
       padding: 8px 0 15px 0;
       margin-bottom: 10px;
       font-size: 18px; }
   button {
     height: 50px;
-    background-color: #fefefe;
+    background-color: #c79236;
     padding: 8px 8px 5px 8px;
     margin: 8px 8px;
     font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 18px;
-    color: #c79236;
+    color: #fefefe;
     width: 93%; }
   .illustration, .outside-img {
     display: none; }
