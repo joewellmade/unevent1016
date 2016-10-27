@@ -1962,7 +1962,7 @@ kbd {
   clear: both; }
 
 body {
-  padding-top: 50px; }
+  padding-top: 120px; }
 
 #div1 {
   visibility: hidden; }
@@ -2020,7 +2020,7 @@ body {
   width: 100%;
   background-color: #fefefe;
   position: fixed;
-  bottom: 0;
+  top: 50px;
   height: 80px;
   text-align: center;
   z-index: 9999;
@@ -2152,7 +2152,7 @@ video {
   background-color: #c79236; }
 
 .unevent-top h1 {
-  margin: 20px 0; }
+  margin: 40px 0; }
 
 .project-background {
   padding-top: 20px;
