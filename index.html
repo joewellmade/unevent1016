@@ -14,7 +14,7 @@
   <div class="top-bar" id="main-menu">
     <div class="top-bar-left">
       <ul class="menu medium-horizontal expanded">
-        <li><a href="#unevent" onClick="window.location.reload()">UnEvent</a></li>
+        <li><a href="#unevent">UnEvent</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#the-project">The Project</a></li>
         <li><a href="#breaking-out">Breaking Out</a></li>
@@ -25,13 +25,22 @@
 
   </div>
   <div class="make-donation">
-        <a href="https://platform.nationalfundingscheme.org/the-bush-theatre-/BUSH001#.V9fR2JMrKL5" target="blank"><button>Click here to make a donation</button></a>
-        <h3><a href="https://www.bushtheatre.co.uk/request-a-phone-call-about-our-unevent/" target="blank">Request a phone call</a></h3>
-    </div>
+      <a href="https://platform.nationalfundingscheme.org/the-bush-theatre-/BUSH001#.V9fR2JMrKL5" target="blank"><button>Click here to make a donation</button></a>
+      <h3><a href="https://www.bushtheatre.co.uk/request-a-phone-call-about-our-unevent/" target="blank">Request a phone call</a></h3>
+  </div>
 
   <div class="mobile-menu-bar">
     <div class="title-bar-title"><a href="#mobile-menu">Menu</a></div>
   </div>
+
+  <!-- <div class="reveal" id="exampleModal1" data-reveal>
+    <div class="flex-video video-stroke" style="margin: 5px 0;">
+                <iframe width="630" height="350" src="https://www.youtube.com/embed/sAqWXf4NEK8" frameborder="0" allowfullscreen></iframe>
+              </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">Close &times;</span>
+    </button>
+  </div> -->
       
       <!-- UnEvent Section -->
       <span class="anchor" id="unevent"></span>
@@ -48,7 +57,9 @@
 
               <p>Your support will bring to life the best of new writing, talent development and innovative community work.</p>
 
-              <p>We can't do it without you. With thanks Gianni and Michael.</p>
+              <p>We can't do it without you.</p> <p>With thanks Gianni and Michael.</p>
+
+              <!-- <p><a data-open="exampleModal1">Click here to watch the animation</a></p> -->
 
               <!-- <h3 class="donate"><a href="https://platform.nationalfundingscheme.org/the-bush-theatre-/BUSH001#.V9fR2JMrKL5" target="blank">Click here to make a donation</a></h3> -->
             </div>
@@ -205,6 +216,7 @@
       </div>
     </div>
 
+
     <!-- Move With Us -->
     <span class="anchor" id="move-with-us"></span>
     <div class="move-with-us-background margin-bottom">
@@ -223,14 +235,14 @@
           <div class="large-4 small-4 columns">
             <a href="https://www.bushtheatre.co.uk/"><img src="assets/bush-logo.png" alt="bush logo" /></a>
           </div>
-          <div class="large-4 small-4 columns">  
+          <div class="large-4 small-12 columns">  
             <h1 class="social">Follow our progress</h1>
             <a href="https://www.facebook.com/bushtheatre/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://twitter.com/bushtheatre" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://www.instagram.com/bushtheatre/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
-          <div class="large-4 small-4 columns">
-            <a href="https://www.bushtheatre.co.uk/"><img src="assets/b-logo.png" class="float-right b-logo" alt="bush logo small" /></a>
+          <div class="large-4 small-12 columns">
+            <a href="https://www.bushtheatre.co.uk/"><img src="assets/b-logo.png" alt="bush logo small" /></a>
           </div>
         </div>
     </div>
@@ -255,7 +267,7 @@
     
     <script>
     $(document).foundation();
-
+    $(document).ready(function(){$('#exampleModal1').foundation('open')});
 
     
     </script>
